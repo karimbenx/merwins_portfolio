@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Merwin S – Full Stack Developer Intern</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b12;--ink:#eef2f7;--mute:#9aa6b6;--glass:rgba(255,255,255,.055);--glass2:rgba(255,255,255,.1);--edge:rgba(255,255,255,.14);--hi:rgba(255,255,255,.28);
+--gold:#ecd29a;--gold2:#b98c3e;--fast:#5eead4;--slow:#d9824f;--orb1:rgba(94,234,212,.16);--orb2:rgba(185,140,62,.2);--shadow:0 20px 50px -20px rgba(0,0,0,.7);
+--head:"Fraunces","Georgia",serif;--body:"Manrope","Segoe UI",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f1ec;--ink:#17202b;--mute:#566271;--glass:rgba(255,255,255,.6);--glass2:rgba(255,255,255,.85);--edge:rgba(23,32,43,.1);--hi:rgba(255,255,255,.95);--gold:#8a6420;--gold2:#c9a35a;--fast:#0f766e;--slow:#b4532a;--orb1:rgba(15,118,110,.14);--orb2:rgba(201,163,90,.3);--shadow:0 20px 40px -22px rgba(40,50,70,.35)}}
+:root[data-theme="light"]{--bg:#f3f1ec;--ink:#17202b;--mute:#566271;--glass:rgba(255,255,255,.6);--glass2:rgba(255,255,255,.85);--edge:rgba(23,32,43,.1);--hi:rgba(255,255,255,.95);--gold:#8a6420;--gold2:#c9a35a;--fast:#0f766e;--slow:#b4532a;--orb1:rgba(15,118,110,.14);--orb2:rgba(201,163,90,.3);--shadow:0 20px 40px -22px rgba(40,50,70,.35)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--bg)}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 var(--body);position:relative;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(40rem 32rem at 12% -5%,var(--orb2),transparent 70%),radial-gradient(38rem 30rem at 95% 18%,var(--orb1),transparent 70%),radial-gradient(34rem 28rem at 30% 105%,var(--orb1),transparent 70%)}
+a{color:var(--gold)}a:focus-visible,button:focus-visible{outline:3px solid var(--fast);outline-offset:3px}
+.wrap{max-width:64rem;margin:0 auto;padding:0 1.5rem}
+nav{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.25rem 0;padding:.4rem;width:max-content;max-width:100%;background:var(--glass);border:1px solid var(--edge);border-radius:999px;backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:inset 0 1px 0 var(--hi)}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;padding:.4rem 1rem;border-radius:999px;transition:background .2s}
+nav a:hover{background:var(--glass2)}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1.08}
+h1{font-size:clamp(3.2rem,11vw,7rem);font-weight:700;letter-spacing:-.03em;background:linear-gradient(180deg,var(--ink) 20%,var(--gold) 120%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.1em}
+h2{font-size:2rem;font-weight:500;margin-bottom:1.75rem}
+h3{font-size:1.3rem;font-weight:500}
+.lead{max-width:38rem;color:var(--mute);margin:1.25rem 0 0;font-size:1.15rem}
+.hero{padding:2.5rem 0 4rem;position:relative}
+h2{display:flex;align-items:center;gap:.85rem}
+.job h3{display:flex;align-items:center;gap:.8rem}
+.glass{position:relative;background:linear-gradient(160deg,var(--glass2),var(--glass) 55%);border:1px solid var(--edge);border-radius:20px;backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);box-shadow:inset 0 1px 0 var(--hi),var(--shadow);overflow:hidden}
+.glass::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.12),transparent);transform:skewX(-18deg);transition:left .8s ease;pointer-events:none}
+.glass:hover::after{left:130%}
+.race{margin-top:3rem;padding:1.75rem}
+.race p{margin:0 0 1.25rem;color:var(--mute);font-size:.95rem}
+.row{display:grid;grid-template-columns:8rem 1fr;gap:1rem;align-items:center;margin-top:.8rem;font-weight:500}
+.track{height:2.4rem;border-radius:999px;background:rgba(127,127,127,.14);display:flex;align-items:center;box-shadow:inset 0 2px 6px rgba(0,0,0,.25)}
+.bar{height:100%;width:0;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding:0 .9rem;font-size:.9rem;color:#06100f;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,.5);animation:fill var(--d,2.4s) cubic-bezier(.2,.7,.2,1) .3s forwards}
+.bar.before{--w:100%;background:linear-gradient(180deg,#f0a173,var(--slow))}
+.bar.after{--w:12.7%;--d:.9s;min-width:.6rem;background:linear-gradient(180deg,#a7f5e8,var(--fast));box-shadow:0 0 18px var(--fast),inset 0 1px 0 rgba(255,255,255,.6)}
+.after-label{margin-left:.8rem;font-size:.9rem}
+@keyframes fill{to{width:var(--w)}}
+@media (prefers-reduced-motion:reduce){.bar{animation:none;width:var(--w)}.glass::after{display:none}}
+section{padding:3rem 0}
+.job{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem;padding:1.75rem;margin-bottom:1.25rem}
+.when{color:var(--gold);font-size:.95rem;font-weight:500}
+.job ul{margin:.7rem 0 0;padding-left:1.1rem}.job li{margin-bottom:.4rem;max-width:44rem;color:var(--mute)}
+code{font-size:.9em;color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;margin:.7rem 0 0}
+.tags span{border:1px solid var(--edge);background:var(--glass);border-radius:999px;padding:.1rem .8rem;font-size:.85rem}
+.wins{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.25rem}
+.wins .glass{padding:1.5rem}
+.wins h3{font-size:1.6rem;background:linear-gradient(180deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.wins p{margin:.5rem 0 0;color:var(--mute)}
+.skills{padding:1.75rem}
+.skills dl{margin:0}.skills dt{font-family:var(--head);font-size:1.15rem}.skills dd{margin:.15rem 0 1.2rem;color:var(--mute)}.skills dd:last-child{margin-bottom:0}
+.contact{padding:2.25rem;margin:1rem 0 4rem;text-align:left}
+.contact p{margin:.3rem 0}
+.ico{display:inline-grid;place-items:center;flex:none;width:2.6rem;height:2.6rem;border-radius:50%;font:600 1.05rem var(--body);color:#2a1d05;background:radial-gradient(circle at 30% 22%,#fff8e0 0,var(--gold) 38%,var(--gold2) 100%);box-shadow:inset 0 2px 3px rgba(255,255,255,.8),inset 0 -3px 5px rgba(80,50,0,.35),0 6px 16px -4px var(--gold2)}
+.ico.sm{width:2.1rem;height:2.1rem;font-size:.85rem}
+.wins .ico{margin-bottom:.9rem}
+.float{position:absolute;right:0;top:3.5rem;display:grid;grid-template-columns:repeat(2,4.6rem);gap:1rem}
+.float span{aspect-ratio:1;display:grid;place-items:center;font:500 1.7rem var(--head);color:var(--gold);border-radius:18px;background:linear-gradient(150deg,var(--glass2),var(--glass));border:1px solid var(--edge);box-shadow:inset 0 1px 0 var(--hi),var(--shadow);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);animation:bob 6s ease-in-out infinite}
+.float span:nth-child(2){animation-delay:-1.5s;transform:translateY(1.2rem)}.float span:nth-child(3){animation-delay:-3s}.float span:nth-child(4){animation-delay:-4.5s}
+@keyframes bob{50%{translate:0 -.6rem}}
+@media (prefers-reduced-motion:reduce){.float span{animation:none}}
+@media (max-width:860px){.float{display:none}}
+.contact a{display:inline-flex;align-items:center;gap:.6rem}
+.cap{font-family:var(--head);font-size:1.15rem;margin:0 0 .8rem}
+.tech{display:grid;grid-template-columns:repeat(auto-fit,minmax(7.5rem,1fr));gap:.9rem;margin-bottom:1.6rem}
+.t{display:flex;flex-direction:column;align-items:center;gap:.6rem;padding:1rem .5rem;border:1px solid var(--edge);border-radius:16px;background:linear-gradient(160deg,var(--glass2),var(--glass));box-shadow:inset 0 1px 0 var(--hi);font-size:.9rem;font-weight:500;transition:transform .25s}
+.t:hover{transform:translateY(-4px)}
+.b{position:relative;overflow:hidden;display:grid;place-items:center;width:3.2rem;height:3.2rem;border-radius:14px;font:800 1.15rem var(--body);font-style:normal;color:#fff;background:var(--c);box-shadow:inset 0 -4px 8px rgba(0,0,0,.3),0 8px 18px -6px var(--c)}
+.b::after{content:"";position:absolute;inset:0 0 50% 0;background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,0))}
+.b svg{position:relative;z-index:1}
+.skills dl{margin-top:1.8rem}
+@media (prefers-reduced-motion:reduce){.t{transition:none}}
+@media (max-width:640px){.job{grid-template-columns:1fr;gap:.3rem}.row{grid-template-columns:1fr;gap:.4rem}}
+.hint{margin:0 0 1.2rem;color:var(--mute);font-size:.95rem}
+button.t{font-family:var(--body);color:var(--ink);cursor:pointer}
+.b{background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(0,0,0,.12)),var(--c)}
+.t[aria-pressed="true"]{border-color:var(--gold);box-shadow:inset 0 1px 0 var(--hi),0 0 0 1px var(--gold),0 10px 28px -10px var(--gold2)}
+.path{padding:1.5rem;margin:.4rem 0 1.4rem}
+.path h3{margin-bottom:1.1rem}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1.1rem;counter-reset:s}
+.steps li{position:relative;padding:.9rem 1rem;border:1px solid var(--edge);border-radius:14px;background:var(--glass);color:var(--mute);font-size:.95rem;line-height:1.5;counter-increment:s;animation:rise .45s ease both}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:1.7rem;height:1.7rem;margin-bottom:.5rem;border-radius:50%;font-weight:600;font-size:.85rem;color:#2a1d05;background:radial-gradient(circle at 30% 22%,#fff8e0,var(--gold) 40%,var(--gold2))}
+.steps li:nth-child(2){animation-delay:.12s}.steps li:nth-child(3){animation-delay:.24s}
+@keyframes rise{from{opacity:0;translate:0 .6rem}}
+@media (prefers-reduced-motion:reduce){.steps li{animation:none}}
+.float span svg{width:1.9rem;height:1.9rem}
+.eyebrow{margin:0 0 1rem;font-size:.78rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.75rem}
+.btn{display:inline-block;padding:.75rem 1.6rem;border-radius:999px;border:1px solid var(--edge);background:var(--glass);color:var(--ink);font-weight:600;font-size:.95rem;text-decoration:none;box-shadow:inset 0 1px 0 var(--hi);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{color:#2a1d05;border-color:transparent;background:linear-gradient(180deg,#f7e3ae,#d6b062 55%,#b98c3e);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 10px 24px -12px #b98c3e}
+h2{font-size:2.1rem;letter-spacing:-.01em}
+section>h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--edge),transparent)}
+.when{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.job,.skills{padding:2rem}
+section{padding:3.25rem 0}
+.soft{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.25rem}
+.soft .glass{padding:1.5rem}
+.soft h3{font-size:1.2rem;margin-bottom:.45rem}
+.ico{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.45);background:radial-gradient(circle at 30% 22%,rgba(255,255,255,.85) 0,var(--ic,var(--gold)) 38%,color-mix(in srgb,var(--ic,var(--gold2)) 62%,#000) 100%);box-shadow:inset 0 2px 3px rgba(255,255,255,.7),inset 0 -3px 5px rgba(0,0,0,.3),0 6px 16px -4px var(--ic,var(--gold2))}
+.steps li::before{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.45);background:radial-gradient(circle at 30% 22%,rgba(255,255,255,.85),var(--pc,var(--gold)) 40%,color-mix(in srgb,var(--pc,var(--gold)) 60%,#000))}
+.soft p{margin:0;color:var(--mute);font-size:.97rem;line-height:1.6}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#work">Work</a><a href="#wins">Results</a><a href="#skills">Skills</a><a href="#people">Soft skills</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<p class="eyebrow">Full Stack Developer Intern · AI &amp; Data Science</p>
+<h1>Merwin S</h1>
+<p class="lead">Full stack developer intern and AI &amp; Data Science undergraduate in Chennai. I build web interfaces, machine learning projects and network automation tools.</p>
+<div class="cta"><a class="btn primary" href="mailto:merwins2004@gmail.com">Get in touch</a><a class="btn" href="#work">View work</a><a class="btn" href="https://www.linkedin.com/in/merwin-merwin-845442283">LinkedIn</a></div>
+<div class="float" aria-hidden="true"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" fill="#E34F26"/></svg></span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" fill="#F7DF1E"/></svg></span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" fill="#3776AB"/></svg></span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.038,4.9l-7.577-4.498C13.009,0.134,12.505,0,12,0c-0.505,0-1.009,0.134-1.462,0.403L2.961,4.9 C2.057,5.437,1.5,6.429,1.5,7.503v8.995c0,1.073,0.557,2.066,1.462,2.603l7.577,4.497C10.991,23.866,11.495,24,12,24 c0.505,0,1.009-0.134,1.461-0.402l7.577-4.497c0.904-0.537,1.462-1.529,1.462-2.603V7.503C22.5,6.429,21.943,5.437,21.038,4.9z M15.17,18.946l0.013,0.646c0.001,0.078-0.05,0.167-0.111,0.198l-0.383,0.22c-0.061,0.031-0.111-0.007-0.112-0.085L14.57,19.29 c-0.328,0.136-0.66,0.169-0.872,0.084c-0.04-0.016-0.057-0.075-0.041-0.142l0.139-0.584c0.011-0.046,0.036-0.092,0.069-0.121 c0.012-0.011,0.024-0.02,0.036-0.026c0.022-0.011,0.043-0.014,0.062-0.006c0.229,0.077,0.521,0.041,0.802-0.101 c0.357-0.181,0.596-0.545,0.592-0.907c-0.003-0.328-0.181-0.465-0.613-0.468c-0.55,0.001-1.064-0.107-1.072-0.917 c-0.007-0.667,0.34-1.361,0.889-1.8l-0.007-0.652c-0.001-0.08,0.048-0.168,0.111-0.2l0.37-0.236 c0.061-0.031,0.111,0.007,0.112,0.087l0.006,0.653c0.273-0.109,0.511-0.138,0.726-0.088c0.047,0.012,0.067,0.076,0.048,0.151 l-0.144,0.578c-0.011,0.044-0.036,0.088-0.065,0.116c-0.012,0.012-0.025,0.021-0.038,0.028c-0.019,0.01-0.038,0.013-0.057,0.009 c-0.098-0.022-0.332-0.073-0.699,0.113c-0.385,0.195-0.52,0.53-0.517,0.778c0.003,0.297,0.155,0.387,0.681,0.396 c0.7,0.012,1.003,0.318,1.01,1.023C16.105,17.747,15.736,18.491,15.17,18.946z M19.143,17.859c0,0.06-0.008,0.116-0.058,0.145 l-1.916,1.164c-0.05,0.029-0.09,0.004-0.09-0.056v-0.494c0-0.06,0.037-0.093,0.087-0.122l1.887-1.129 c0.05-0.029,0.09-0.004,0.09,0.056V17.859z M20.459,6.797l-7.168,4.427c-0.894,0.523-1.553,1.109-1.553,2.187v8.833 c0,0.645,0.26,1.063,0.66,1.184c-0.131,0.023-0.264,0.039-0.398,0.039c-0.42,0-0.833-0.114-1.197-0.33L3.226,18.64 c-0.741-0.44-1.201-1.261-1.201-2.142V7.503c0-0.881,0.46-1.702,1.201-2.142l7.577-4.498c0.363-0.216,0.777-0.33,1.197-0.33 c0.419,0,0.833,0.114,1.197,0.33l7.577,4.498c0.624,0.371,1.046,1.013,1.164,1.732C21.686,6.557,21.12,6.411,20.459,6.797z" fill="#4EAA25"/></svg></span></div>
+<div class="glass race" role="img" aria-label="Reconnaissance-to-report time dropped from 34 minutes to 4 minutes 20 seconds">
+<p>My capstone security tool, measured on Metasploitable 2 and DVWA over 5 trials:</p>
+<div class="row"><span>Manual process</span><div class="track"><div class="bar before">34 min</div></div></div>
+<div class="row"><span>Automated</span><div class="track"><div class="bar after"></div><span class="after-label">4 min 20 s</span></div></div>
+</div>
+</header>
+
+<section id="work">
+<h2><span class="ico">✦</span>Work and projects</h2>
+<div class="glass job"><div class="when">Jul 2026 – present<br>Chennai</div><div>
+<h3><span class="ico sm">&lt;/&gt;</span>Full Stack Intern, Whytap</h3>
+<ul><li>Built front-end pages and interfaces with HTML, CSS and JavaScript.</li><li>Learning back-end development and database functions to ship complete full-stack features.</li></ul></div></div>
+
+<div class="glass job"><div class="when">Feb 2026 – Apr 2026<br>Chennai</div><div>
+<h3><span class="ico sm">❖</span>Software Development Intern, MadrasMindworks</h3>
+<ul><li>Designed the insect taxonomy database and supporting framework for the TNAU Insect Museum digital platform.</li><li>Built a user intake form and contributed feature ideas for VIT Wayfinder, a campus navigation platform.</li></ul></div></div>
+
+<div class="glass job"><div class="when">2025 – 2026<br>Capstone, team of 3</div><div>
+<h3><span class="ico sm">⌘</span>Network Automation Tool for Ethical Penetration Testing</h3>
+<div class="tags"><span>Bash</span><span>Python</span><span>Nmap</span><span>NVD REST API</span></div>
+<ul><li>Owned Module 3: wrote <code>orchestrator.sh</code> to sequence stages, verify outputs and log timestamps for benchmarking.</li><li>Automated <code>report_gen.py</code> to combine host, service and CVE data into plain-text and HTML reports ranked by CVSS severity.</li><li>Cut reconnaissance-to-report time from 34 min to 4 min 20 s, a 7–8x speedup, with zero false negatives across 5 trials.</li><li>Designed the JSON interface schema so all three members could build and test modules in parallel.</li></ul></div></div>
+
+<div class="glass job"><div class="when">2026</div><div>
+<h3><span class="ico sm">✪</span>CrisisCompass, Vortexa Hackathon</h3>
+<ul><li>Built an AI-driven humanitarian crisis prediction and resource-allocation project, as a participant in the Vortexa Hackathon.</li></ul></div></div>
+
+<div class="glass job"><div class="when">Campus and conferences</div><div>
+<h3><span class="ico sm">◉</span>Presenter and coordinator</h3>
+<ul><li>Presented a technical paper on emerging AI trends at the 5th International Conference on AI &amp; 6G Communications.</li><li>Co-coordinated Minnal 2K25, a sports event, and its Day 2 technical presentation track.</li></ul></div></div>
+</section>
+
+<section id="wins">
+<h2><span class="ico">★</span>Results</h2>
+<div class="wins">
+<div class="glass"><span class="ico">⚡︎</span><h3>7–8x faster</h3><p>Security tool optimized for penetration testing.</p></div>
+<div class="glass"><span class="ico">▼</span><h3>40% less time</h3><p>Processing time cut through efficient database design at MadrasMindworks.</p></div>
+<div class="glass"><span class="ico">≋</span><h3>3 live sources</h3><p>Integrated to boost flood prediction accuracy.</p></div>
+<div class="glass"><span class="ico">◎</span><h3>0 false negatives</h3><p>Across 5 trials on Metasploitable 2 and DVWA.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2><span class="ico">◈</span>Skills and education</h2>
+<div class="glass skills">
+<p class="hint">Tap a tool to see its pathway.</p>
+<div class="cap">Front end</div>
+<div class="tech"><button class="t" type="button" data-k="html" aria-pressed="false"><span class="b" style="--c:#E34F26"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" fill="#fff"/></svg></span>HTML</button><button class="t" type="button" data-k="css" aria-pressed="false"><span class="b" style="--c:#1572B6"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" fill="#fff"/></svg></span>CSS</button><button class="t" type="button" data-k="js" aria-pressed="false"><span class="b" style="--c:#F7DF1E"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" fill="#222"/></svg></span>JavaScript</button></div>
+<div class="cap">Data and back end</div>
+<div class="tech"><button class="t" type="button" data-k="sql" aria-pressed="false"><span class="b" style="--c:#00758f"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg></span>SQL</button><button class="t" type="button" data-k="supa" aria-pressed="false"><span class="b" style="--c:#1f9d67"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z" fill="#fff"/></svg></span>Supabase</button><button class="t" type="button" data-k="mongo" aria-pressed="false"><span class="b" style="--c:#47A248"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z" fill="#fff"/></svg></span>MongoDB</button></div>
+<div class="cap">Machine learning and security tooling</div>
+<div class="tech"><button class="t" type="button" data-k="py" aria-pressed="false"><span class="b" style="--c:#3776AB"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" fill="#fff"/></svg></span>Python</button><button class="t" type="button" data-k="bash" aria-pressed="false"><span class="b" style="--c:#4EAA25"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M21.038,4.9l-7.577-4.498C13.009,0.134,12.505,0,12,0c-0.505,0-1.009,0.134-1.462,0.403L2.961,4.9 C2.057,5.437,1.5,6.429,1.5,7.503v8.995c0,1.073,0.557,2.066,1.462,2.603l7.577,4.497C10.991,23.866,11.495,24,12,24 c0.505,0,1.009-0.134,1.461-0.402l7.577-4.497c0.904-0.537,1.462-1.529,1.462-2.603V7.503C22.5,6.429,21.943,5.437,21.038,4.9z M15.17,18.946l0.013,0.646c0.001,0.078-0.05,0.167-0.111,0.198l-0.383,0.22c-0.061,0.031-0.111-0.007-0.112-0.085L14.57,19.29 c-0.328,0.136-0.66,0.169-0.872,0.084c-0.04-0.016-0.057-0.075-0.041-0.142l0.139-0.584c0.011-0.046,0.036-0.092,0.069-0.121 c0.012-0.011,0.024-0.02,0.036-0.026c0.022-0.011,0.043-0.014,0.062-0.006c0.229,0.077,0.521,0.041,0.802-0.101 c0.357-0.181,0.596-0.545,0.592-0.907c-0.003-0.328-0.181-0.465-0.613-0.468c-0.55,0.001-1.064-0.107-1.072-0.917 c-0.007-0.667,0.34-1.361,0.889-1.8l-0.007-0.652c-0.001-0.08,0.048-0.168,0.111-0.2l0.37-0.236 c0.061-0.031,0.111,0.007,0.112,0.087l0.006,0.653c0.273-0.109,0.511-0.138,0.726-0.088c0.047,0.012,0.067,0.076,0.048,0.151 l-0.144,0.578c-0.011,0.044-0.036,0.088-0.065,0.116c-0.012,0.012-0.025,0.021-0.038,0.028c-0.019,0.01-0.038,0.013-0.057,0.009 c-0.098-0.022-0.332-0.073-0.699,0.113c-0.385,0.195-0.52,0.53-0.517,0.778c0.003,0.297,0.155,0.387,0.681,0.396 c0.7,0.012,1.003,0.318,1.01,1.023C16.105,17.747,15.736,18.491,15.17,18.946z M19.143,17.859c0,0.06-0.008,0.116-0.058,0.145 l-1.916,1.164c-0.05,0.029-0.09,0.004-0.09-0.056v-0.494c0-0.06,0.037-0.093,0.087-0.122l1.887-1.129 c0.05-0.029,0.09-0.004,0.09,0.056V17.859z M20.459,6.797l-7.168,4.427c-0.894,0.523-1.553,1.109-1.553,2.187v8.833 c0,0.645,0.26,1.063,0.66,1.184c-0.131,0.023-0.264,0.039-0.398,0.039c-0.42,0-0.833-0.114-1.197-0.33L3.226,18.64 c-0.741-0.44-1.201-1.261-1.201-2.142V7.503c0-0.881,0.46-1.702,1.201-2.142l7.577-4.498c0.363-0.216,0.777-0.33,1.197-0.33 c0.419,0,0.833,0.114,1.197,0.33l7.577,4.498c0.624,0.371,1.046,1.013,1.164,1.732C21.686,6.557,21.12,6.411,20.459,6.797z" fill="#fff"/></svg></span>Bash</button><button class="t" type="button" data-k="nmap" aria-pressed="false"><span class="b" style="--c:#1e4d7a"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 12 19 5"/></svg></span>Nmap</button><button class="t" type="button" data-k="nvd" aria-pressed="false"><span class="b" style="--c:#5b4bb7"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6z"/></svg></span>NVD API</button></div>
+<div class="glass path" id="path" hidden></div>
+<dl>
+<dt>B.Tech, Artificial Intelligence &amp; Data Science</dt><dd>Saveetha Institute of Medical and Technical Sciences, 06/2022 – 07/2026. CGPA 8.61/10.</dd>
+<dt>SSLC (10th)</dt><dd>Our Lady’s Higher Secondary School, 06/2019 – 08/2020. 81%.</dd>
+<dt>HSC (12th)</dt><dd>Our Lady’s Higher Secondary School. 78.8%.</dd>
+</dl></div>
+</section>
+
+<section id="people">
+<h2><span class="ico">❋</span>Soft skills</h2>
+<div class="soft">
+<div class="glass"><h3>Communication</h3><p>Presented a technical paper on emerging AI trends at the 5th International Conference on AI &amp; 6G Communications. Fluent English.</p></div>
+<div class="glass"><h3>Mediation</h3><p>Comfortable bringing people with different views to common ground and keeping a team moving.</p></div>
+<div class="glass"><h3>Cooperation</h3><p>Designed the JSON interface schema so all three capstone members could build and test their modules in parallel.</p></div>
+<div class="glass"><h3>Teamwork</h3><p>One of three on a security automation capstone, owning Module 3 and its hand-offs to the other two.</p></div>
+<div class="glass"><h3>Coordination</h3><p>Co-coordinated Minnal 2K25 and its Day 2 technical presentation track.</p></div>
+<div class="glass"><h3>Problem-solving</h3><p>Cut a 34-minute reconnaissance-to-report process down to 4 min 20 s.</p></div>
+<div class="glass"><h3>Languages</h3><p>English (fluent) and German (basic).</p></div>
+</div>
+</section>
+
+<footer id="contact" class="glass contact">
+<h2><span class="ico">✉</span>Contact</h2>
+<p>Open to roles on technology-driven teams.</p>
+<p><a href="mailto:merwins2004@gmail.com"><span class="ico sm">✉</span>merwins2004@gmail.com</a></p>
+<p><a href="tel:+919884441610"><span class="ico sm">☎</span>+91 98844 41610</a></p>
+<p><a href="https://www.linkedin.com/in/merwin-merwin-845442283"><span class="ico sm">↗</span>LinkedIn</a></p>
+</footer>
+</div>
+<script>
+(function(){var D={"html": ["Started: front-end basics at Whytap, Jul 2026", "Applied: building web pages and interfaces as a Full Stack Intern", "Next: connecting pages to back-end features"], "css": ["Started: front-end basics at Whytap, Jul 2026", "Applied: styling and laying out pages and interfaces", "Next: polished, responsive full-stack features"], "js": ["Started: front-end basics at Whytap, Jul 2026", "Applied: adding behavior to pages and interfaces", "Next: calling back-end functions and databases"], "sql": ["Foundation: about 1 year working with databases", "Applied: designed the insect taxonomy database for the TNAU Insect Museum platform, MadrasMindworks, Feb–Apr 2026", "Result: 40% less processing time through database design"], "supa": ["Working knowledge, built up alongside SQL over about a year", "Now: learning back-end and database functions at Whytap", "Goal: complete full-stack features"], "mongo": ["Working knowledge of document databases beside SQL", "Now: learning back-end and database functions at Whytap", "Goal: complete full-stack features"], "py": ["Foundation: about 2 years in machine learning", "Applied: report_gen.py in the capstone, turning host, service and CVE data into CVSS-ranked reports", "Related AI work: CrisisCompass at the Vortexa Hackathon and flood prediction with 3 live data sources"], "bash": ["Applied: orchestrator.sh in the capstone sequenced every stage, verified outputs and logged timestamps", "Result: reconnaissance-to-report time cut from 34 min to 4 min 20 s, a 7–8x speedup", "Role: owned Module 3 of the 3-person team"], "nmap": ["Used for: the reconnaissance stage of the capstone", "Tested on: Metasploitable 2 and DVWA across 5 trials", "Result: zero false negatives"], "nvd": ["Used for: pulling CVE data in the capstone", "Combined with: host and service results from Nmap", "Output: plain-text and HTML reports ranked by CVSS severity"]},N={"html": "HTML", "css": "CSS", "js": "JavaScript", "sql": "SQL", "supa": "Supabase", "mongo": "MongoDB", "py": "Python", "bash": "Bash", "nmap": "Nmap", "nvd": "NVD API"},box=document.getElementById("path"),cur=null;
+document.querySelectorAll("button.t").forEach(function(b){b.addEventListener("click",function(){var k=b.dataset.k;
+document.querySelectorAll("button.t").forEach(function(x){x.setAttribute("aria-pressed","false")});
+if(cur===k){box.hidden=true;cur=null;return}
+cur=k;b.setAttribute("aria-pressed","true");
+box.innerHTML="<h3>"+N[k]+" pathway</h3><ol class=\"steps\">"+D[k].map(function(s){return"<li>"+s+"</li>"}).join("")+"</ol>";
+box.hidden=false;box.scrollIntoView({behavior:"smooth",block:"nearest"})})})})();
+</script>
+<script>
+(function(){var P=["#e0527a","#3b82f6","#10b981","#f59e0b","#8b5cf6","#06b6d4","#ef6c3a","#ec4899"];
+document.querySelectorAll(".ico").forEach(function(e,i){e.style.setProperty("--ic",P[i%P.length])});
+var box=document.getElementById("path");
+document.querySelectorAll("button.t").forEach(function(b){b.addEventListener("click",function(){box.style.setProperty("--pc",b.querySelector(".b").style.getPropertyValue("--c"))})})})();
+</script>
+</body>
+</html>
